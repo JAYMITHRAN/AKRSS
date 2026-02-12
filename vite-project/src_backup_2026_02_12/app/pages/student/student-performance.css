@@ -1,0 +1,145 @@
+.performance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* space-y-6 */
+}
+
+.performance-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--muted-foreground);
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* space-y-4 */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* space-y-2 */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    /* gap-4 */
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    /* gap-4 */
+}
+
+@media (min-width: 768px) {
+    .summary-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.summary-value {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 600;
+}
+
+.text-green {
+    color: #16a34a;
+}
+
+.text-yellow {
+    color: #ca8a04;
+}
+
+.text-red {
+    color: #dc2626;
+}
+
+.charts-grid {
+    display: grid;
+    gap: 1.5rem;
+    /* gap-6 */
+}
+
+@media (min-width: 1024px) {
+    .charts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.recent-tests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* space-y-3 */
+}
+
+.test-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    /* p-3 */
+    background-color: var(--muted);
+    /* bg-gray-50 */
+    border-radius: 0.5rem;
+}
+
+.test-info {
+    flex: 1;
+}
+
+.test-topic {
+    font-weight: 500;
+}
+
+.test-subject {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: var(--muted-foreground);
+}
+
+.test-date {
+    font-size: 0.75rem;
+    /* text-xs */
+    color: #9ca3af;
+    /* text-gray-400 */
+    margin-top: 0.25rem;
+}
+
+.test-score {
+    text-align: right;
+}
+
+.score-percentage {
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 700;
+}
+
+.score-details {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: var(--muted-foreground);
+}
+
+/* Recharts Tooltip Customization if needed, mostly handles itself */

@@ -1,0 +1,101 @@
+.toggle-root {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* gap-2 */
+    border-radius: 0.375rem;
+    /* rounded-md */
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    transition-property: color, box-shadow, background-color;
+    transition-duration: 0.2s;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    /* default border */
+    padding: 0;
+    background-color: transparent;
+    color: var(--foreground);
+}
+
+.toggle-root:hover {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+}
+
+.toggle-root:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.toggle-root[data-state="on"] {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.toggle-root:focus-visible {
+    border-color: var(--ring);
+    box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.5);
+    /* ring-ring/50 approx */
+}
+
+/* Icons within toggle */
+.toggle-root svg {
+    pointer-events: none;
+    flex-shrink: 0;
+}
+
+.toggle-root svg:not([class*='size-']) {
+    width: 1rem;
+    /* size-4 */
+    height: 1rem;
+}
+
+/* Variants */
+.toggle-variant-default {
+    background-color: transparent;
+}
+
+.toggle-variant-outline {
+    border-color: var(--input);
+    background-color: transparent;
+}
+
+.toggle-variant-outline:hover {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+/* Sizes */
+.toggle-size-default {
+    height: 2.25rem;
+    /* h-9 */
+    padding-left: 0.5rem;
+    /* px-2 */
+    padding-right: 0.5rem;
+    min-width: 2.25rem;
+    /* min-w-9 */
+}
+
+.toggle-size-sm {
+    height: 2rem;
+    /* h-8 */
+    padding-left: 0.375rem;
+    /* px-1.5 */
+    padding-right: 0.375rem;
+    min-width: 2rem;
+    /* min-w-8 */
+}
+
+.toggle-size-lg {
+    height: 2.5rem;
+    /* h-10 */
+    padding-left: 0.625rem;
+    /* px-2.5 */
+    padding-right: 0.625rem;
+    min-width: 2.5rem;
+    /* min-w-10 */
+}

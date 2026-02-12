@@ -1,0 +1,262 @@
+.student-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* space-y-6 */
+}
+
+.welcome-section {
+    /* div */
+}
+
+.welcome-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    /* font-bold */
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.welcome-subtitle {
+    color: #4b5563;
+    /* text-gray-600 */
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    /* gap-4 */
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.card-header-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    /* pb-2 */
+}
+
+.card-title-sm {
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    color: #4b5563;
+    /* text-gray-600 */
+}
+
+.icon-sm {
+    width: 1rem;
+    /* w-4 */
+    height: 1rem;
+    /* h-4 */
+}
+
+.icon-blue {
+    color: #2563eb;
+}
+
+.icon-purple {
+    color: #9333ea;
+}
+
+.icon-green {
+    color: #16a34a;
+}
+
+.icon-orange {
+    color: #ea580c;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 700;
+    /* font-bold */
+}
+
+.stat-desc {
+    font-size: 0.75rem;
+    /* text-xs */
+    color: #6b7280;
+    /* text-gray-500 */
+    margin-top: 0.25rem;
+    /* mt-1 */
+}
+
+.main-grid {
+    display: grid;
+    gap: 1.5rem;
+    /* gap-6 */
+}
+
+@media (min-width: 1024px) {
+    .main-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.card-title-flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* gap-2 */
+}
+
+.icon-md {
+    width: 1.25rem;
+    /* w-5 */
+    height: 1.25rem;
+    /* h-5 */
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* space-y-3 */
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    /* p-3 */
+    background-color: #f9fafb;
+    /* bg-gray-50 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-title {
+    font-weight: 500;
+}
+
+.item-subtitle {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: #6b7280;
+    /* text-gray-500 */
+}
+
+.w-full {
+    width: 100%;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #6b7280;
+    /* text-gray-500 */
+}
+
+.icon-xl {
+    width: 3rem;
+    /* w-12 */
+    height: 3rem;
+    /* h-12 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.text-green {
+    color: #22c55e;
+}
+
+.weak-topic-item {
+    padding: 0.75rem;
+    /* p-3 */
+    background-color: #fef2f2;
+    /* bg-red-50 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    border: 1px solid #fee2e2;
+    /* border-red-100 */
+}
+
+.topic-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.progress-thin {
+    height: 0.25rem;
+    /* h-1 */
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* space-y-2 */
+}
+
+.notification-item {
+    padding: 0.75rem;
+    /* p-3 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    border: 1px solid var(--border);
+}
+
+.notification-read {
+    background-color: #f9fafb;
+    /* bg-gray-50 */
+}
+
+.notification-unread {
+    background-color: #eff6ff;
+    /* bg-blue-50 */
+    border-color: #bfdbfe;
+    /* border-blue-200 */
+}
+
+.notification-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    /* gap-3 */
+}
+
+.notification-icon {
+    width: 1rem;
+    /* w-4 */
+    height: 1rem;
+    /* h-4 */
+    margin-top: 0.125rem;
+    /* mt-0.5 */
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}

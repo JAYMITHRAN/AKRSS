@@ -1,0 +1,181 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* space-y-6 */
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    /* font-bold */
+    margin-bottom: 0.5rem;
+    /* mb-2 */
+}
+
+.dashboard-subtitle {
+    color: var(--muted-foreground);
+    /* text-gray-600 approx */
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    /* gap-4 */
+}
+
+@media (min-width: 768px) {
+    .stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .stat-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.stat-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    /* pb-2 */
+}
+
+.stat-card-title {
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+    /* font-medium */
+    color: var(--muted-foreground);
+}
+
+.stat-icon {
+    width: 1rem;
+    /* w-4 */
+    height: 1rem;
+    /* h-4 */
+}
+
+.stat-val {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 700;
+    /* font-bold */
+}
+
+/* Specific colors for icons */
+.icon-blue {
+    color: #2563eb;
+}
+
+.icon-purple {
+    color: #9333ea;
+}
+
+.icon-green {
+    color: #16a34a;
+}
+
+.icon-orange {
+    color: #ea580c;
+}
+
+.config-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* space-y-4 */
+}
+
+.config-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    /* p-4 */
+    background-color: var(--muted);
+    /* bg-gray-50 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+}
+
+.config-label-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.config-label {
+    font-weight: 500;
+}
+
+.config-description {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: var(--muted-foreground);
+}
+
+.config-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* gap-2 */
+}
+
+.system-stats-grid {
+    display: grid;
+    gap: 1rem;
+    /* gap-4 */
+}
+
+@media (min-width: 768px) {
+    .system-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-label {
+    color: var(--muted-foreground);
+}
+
+.stats-value {
+    font-weight: 500;
+}
+
+.badge-online {
+    background-color: #dcfce7;
+    /* bg-green-100 */
+    color: #15803d;
+    /* text-green-700 */
+    border-color: #bbf7d0;
+    /* border-green-200 */
+}
+
+.user-details {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: var(--muted-foreground);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    /* gap-2 */
+}

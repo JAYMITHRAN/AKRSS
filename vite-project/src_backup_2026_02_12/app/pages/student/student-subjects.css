@@ -1,0 +1,116 @@
+.student-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* space-y-6 */
+}
+
+.page-header {
+    margin-bottom: 1rem;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: #4b5563;
+}
+
+.subjects-grid {
+    display: list-item;
+    /* It was grid gap-4 but mapped to Card list. Flex col is fine or grid */
+    display: grid;
+    gap: 1rem;
+}
+
+.card-header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.subject-info {
+    flex: 1;
+}
+
+.subject-title-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.subject-desc {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.subject-score {
+    text-align: right;
+}
+
+.score-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.score-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.topic-item {
+    padding: 0.75rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+.topic-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.topic-name-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topic-name {
+    font-weight: 500;
+}
+
+.topic-score {
+    font-weight: 700;
+}
+
+.topic-meta {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.h-1 {
+    height: 0.25rem;
+}

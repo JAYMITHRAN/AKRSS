@@ -1,0 +1,215 @@
+.sidebar-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--sidebar-background);
+    color: var(--sidebar-foreground);
+}
+
+.sidebar-wrapper[data-variant="inset"] {
+    background-color: var(--sidebar-background);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-background);
+    color: var(--sidebar-foreground);
+    border-right: 1px solid var(--sidebar-border);
+}
+
+.sidebar[data-side="right"] {
+    border-right: 0;
+    border-left: 1px solid var(--sidebar-border);
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    height: 100vh;
+    width: var(--sidebar-width);
+    flex-direction: column;
+    background-color: var(--sidebar-background);
+    transition: left 0.2s, right 0.2s, width 0.2s;
+}
+
+.sidebar-container[data-side="left"] {
+    left: 0;
+}
+
+.sidebar-container[data-side="right"] {
+    right: 0;
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* gap-2 */
+}
+
+.sidebar-header,
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* gap-2 */
+    padding: 0.5rem;
+    /* p-2 */
+}
+
+.sidebar-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    padding: 0.5rem;
+    /* p-2 */
+}
+
+.sidebar-group-label {
+    display: flex;
+    height: 2rem;
+    /* h-8 */
+    align-items: center;
+    border-radius: 0.375rem;
+    /* rounded-md */
+    padding-left: 0.5rem;
+    /* px-2 */
+    padding-right: 0.5rem;
+    font-size: 0.75rem;
+    /* text-xs */
+    font-weight: 500;
+    /* font-medium */
+    color: var(--sidebar-foreground);
+    opacity: 0.7;
+}
+
+.sidebar-menu {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    gap: 0.25rem;
+    /* gap-1 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-menu-item {
+    position: relative;
+}
+
+.sidebar-menu-button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0.5rem;
+    /* gap-2 */
+    overflow: hidden;
+    border-radius: 0.375rem;
+    /* rounded-md */
+    padding: 0.5rem;
+    /* p-2 */
+    text-align: left;
+    font-size: 0.875rem;
+    /* text-sm */
+    outline: none;
+    transition: background-color 0.15s, color 0.15s;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--sidebar-foreground);
+}
+
+.sidebar-menu-button:hover {
+    background-color: var(--sidebar-accent);
+    color: var(--sidebar-accent-foreground);
+}
+
+.sidebar-menu-button[data-active="true"] {
+    background-color: var(--sidebar-accent);
+    color: var(--sidebar-accent-foreground);
+    font-weight: 500;
+}
+
+.sidebar-menu-button svg {
+    width: 1rem;
+    /* size-4 */
+    height: 1rem;
+    flex-shrink: 0;
+}
+
+/* Sidebar Menu Button Variants */
+.sidebar-menu-button.variant-default {
+    /* Uses default hover styles defined above */
+    color: inherit;
+}
+
+.sidebar-menu-button.variant-outline {
+    background-color: var(--background);
+    box-shadow: 0 0 0 1px var(--sidebar-border);
+}
+
+.sidebar-menu-button.variant-outline:hover {
+    background-color: var(--sidebar-accent);
+    box-shadow: 0 0 0 1px var(--sidebar-accent);
+}
+
+/* Sizes */
+.sidebar-menu-button.size-default {
+    height: 2rem;
+    /* h-8 */
+    font-size: 0.875rem;
+    /* text-sm */
+}
+
+.sidebar-menu-button.size-sm {
+    height: 1.75rem;
+    /* h-7 */
+    font-size: 0.75rem;
+    /* text-xs */
+}
+
+.sidebar-menu-button.size-lg {
+    height: 3rem;
+    /* h-12 */
+    font-size: 0.875rem;
+    /* text-sm */
+}
+
+.sidebar-rail {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 20;
+    width: 1rem;
+    /* w-4 */
+    cursor: col-resize;
+    display: none;
+    /* hidden by default */
+}
+
+@media (min-width: 640px) {
+    .sidebar-rail {
+        display: flex;
+    }
+}
+
+.sidebar-inset {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--background);
+}

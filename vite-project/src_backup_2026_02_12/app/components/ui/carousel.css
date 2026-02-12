@@ -1,0 +1,91 @@
+.carousel {
+    position: relative;
+}
+
+.carousel-content-wrapper {
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+}
+
+.carousel-content.horizontal {
+    margin-left: -1rem;
+    /* -ml-4 */
+}
+
+.carousel-content.vertical {
+    margin-top: -1rem;
+    /* -mt-4 */
+    flex-direction: column;
+}
+
+.carousel-item {
+    min-width: 0;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 100%;
+}
+
+.carousel-item.horizontal {
+    padding-left: 1rem;
+    /* pl-4 */
+}
+
+.carousel-item.vertical {
+    padding-top: 1rem;
+    /* pt-4 */
+}
+
+.carousel-previous,
+.carousel-next {
+    position: absolute;
+    height: 2rem;
+    /* size-8 */
+    width: 2rem;
+    border-radius: 9999px;
+    /* rounded-full */
+}
+
+/* Horizontal positioning */
+.carousel.horizontal .carousel-previous {
+    top: 50%;
+    left: -3rem;
+    /* -left-12 */
+    transform: translateY(-50%);
+}
+
+.carousel.horizontal .carousel-next {
+    top: 50%;
+    right: -3rem;
+    /* -right-12 */
+    transform: translateY(-50%);
+}
+
+/* Vertical positioning */
+.carousel.vertical .carousel-previous {
+    top: -3rem;
+    /* -top-12 */
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.carousel.vertical .carousel-next {
+    bottom: -3rem;
+    /* -bottom-12 */
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

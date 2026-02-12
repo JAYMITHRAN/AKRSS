@@ -1,0 +1,239 @@
+.students-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* space-y-6 */
+}
+
+.students-header {
+    margin-bottom: 0.5rem;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--muted-foreground);
+}
+
+.student-info-card {
+    background: linear-gradient(to right, #eff6ff, #faf5ff);
+    /* from-blue-50 to-purple-50 */
+}
+
+.student-info-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.student-name {
+    font-size: 1.5rem;
+    /* text-2xl */
+    font-weight: 600;
+}
+
+.student-details {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    /* text-base */
+    color: var(--muted-foreground);
+}
+
+.status-badge {
+    font-size: 1.125rem;
+    /* text-lg */
+    padding: 0.5rem 1rem;
+    /* px-4 py-2 */
+}
+
+.stats-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.stat-value {
+    font-size: 1.875rem;
+    /* text-3xl */
+    font-weight: 600;
+}
+
+.analysis-tabs {
+    margin-top: 1rem;
+}
+
+.analysis-tabs-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* space-y-4 */
+}
+
+.topic-category-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.topic-category-title {
+    font-weight: 500;
+}
+
+.topic-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* space-y-2 */
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    /* p-3 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    border-width: 1px;
+    border-style: solid;
+}
+
+.topic-item.weak {
+    background-color: #fef2f2;
+    /* bg-red-50 */
+    border-color: #fecaca;
+    /* border-red-200 */
+}
+
+.topic-item.moderate {
+    background-color: #fefce8;
+    /* bg-yellow-50 */
+    border-color: #fde047;
+    /* border-yellow-200 */
+}
+
+.topic-item.strong {
+    background-color: #f0fdf4;
+    /* bg-green-50 */
+    border-color: #bbf7d0;
+    /* border-green-200 */
+}
+
+.topic-name {
+    font-weight: 500;
+}
+
+.topic-subject {
+    font-size: 0.875rem;
+    /* text-sm */
+    color: var(--muted-foreground);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    /* space-y-3 */
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    /* p-3 */
+    background-color: var(--muted);
+    /* bg-gray-50 */
+    border-radius: 0.5rem;
+}
+
+.history-details {
+    flex: 1;
+}
+
+.history-date {
+    font-size: 0.75rem;
+    /* text-xs */
+    color: var(--muted-foreground-lighter);
+    margin-top: 0.25rem;
+}
+
+.history-score {
+    text-align: right;
+}
+
+.score-percentage {
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 700;
+}
+
+.test-schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    /* p-4 */
+    background-color: var(--muted);
+    /* bg-gray-50 */
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+.schedule-badges {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    /* gap-3 */
+}
+
+.badge-completed {
+    background-color: #dcfce7;
+    /* bg-green-100 */
+    color: #15803d;
+    /* text-green-700 */
+    border-color: #bbf7d0;
+    /* border-green-200 */
+}
+
+.badge-yellow {
+    background-color: #fef9c3;
+    color: #a16207;
+    border-color: #fde047;
+}
+
+.icon-red {
+    color: #ef4444;
+}
+
+.icon-yellow {
+    color: #eab308;
+}
+
+.icon-green {
+    color: #22c55e;
+}

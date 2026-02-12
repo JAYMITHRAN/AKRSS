@@ -1,0 +1,65 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    /* rounded-full */
+    border: 1px solid transparent;
+    padding-left: 0.625rem;
+    /* px-2.5 */
+    padding-right: 0.625rem;
+    padding-top: 0.125rem;
+    /* py-0.5 */
+    padding-bottom: 0.125rem;
+    font-size: 0.75rem;
+    /* text-xs */
+    font-weight: 600;
+    /* font-semibold */
+    transition-property: colors;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.badge:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring), 0 0 0 4px var(--background);
+}
+
+.badge-default {
+    border-color: transparent;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.badge-default:hover {
+    background-color: var(--primary);
+    /* opacity 80% */
+    opacity: 0.8;
+}
+
+.badge-secondary {
+    border-color: transparent;
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+}
+
+.badge-secondary:hover {
+    background-color: var(--secondary);
+    opacity: 0.8;
+}
+
+.badge-destructive {
+    border-color: transparent;
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+}
+
+.badge-destructive:hover {
+    background-color: var(--destructive);
+    opacity: 0.8;
+}
+
+.badge-outline {
+    color: var(--foreground);
+    border-color: var(--border);
+    /* assuming outline badge follows text color or border */
+}
